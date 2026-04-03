@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>레인지엑스 대치점 | 대치동 프리미엄 실내 골프 연습장</title>
+<meta name="description" content="대치동·강남·한티 생활권의 정돈된 실내 골프 공간. 연습부터 상담까지, 흐름이 설계된 프리미엄 골프 연습장 레인지엑스 대치점.">
+<meta property="og:title" content="레인지엑스 대치점 | 대치동 프리미엄 실내 골프 연습장">
+<meta property="og:description" content="대치동·강남·한티 생활권의 정돈된 실내 골프 공간. 연습부터 상담까지, 흐름이 설계된 프리미엄 골프 연습장.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg-hero:#17191c;
+  --bg-base:#f5f2ec;
+  --bg-soft:#ece6dd;
+  --bg-panel:#fcfaf6;
+  --bg-deep:#1a1c1f;
+  --text-dark:#17191c;
+  --text-body:#4a5060;
+  --text-sub:#68717e;
+  --text-muted:#8e948f;
+  --text-white:#f5f2ec;
+  --text-white-sub:rgba(245,242,236,.48);
+  --accent:#8b9d78;
+  --accent-soft:rgba(139,157,120,.10);
+  --accent-hover:#7a8e68;
+  --warm:#cfc6b7;
+  --warm-soft:rgba(207,198,183,.18);
+  --border:rgba(23,25,28,.06);
+  --border-warm:rgba(207,198,183,.32);
+  --shadow-card:0 1px 2px rgba(23,25,28,.02),0 6px 20px rgba(23,25,28,.035);
+  --shadow-hover:0 2px 8px rgba(23,25,28,.045),0 16px 36px rgba(23,25,28,.065);
+  --r:18px;
+  --rs:12px;
+  --max-w:1080px;
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media(min-width:769px){html{scroll-snap-type:y proximity}.snap{scroll-snap-align:start}}
+body{font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg-base);color:var(--text-body);line-height:1.75;word-break:keep-all;overflow-wrap:break-word;-webkit-font-smoothing:antialiased}
+
+.wrap{max-width:var(--max-w);margin:0 auto;padding:0 24px}
+.label{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:14px}
+.label--light{color:rgba(139,157,120,.45)}
+.sec-title{font-size:clamp(24px,4vw,38px);font-weight:800;line-height:1.22;letter-spacing:-.025em;color:var(--text-dark);margin-bottom:12px}
+.sec-title--w{color:var(--text-white)}
+.sec-sub{font-size:clamp(14px,1.7vw,16px);color:var(--text-sub);max-width:480px;line-height:1.78}
+.sec-sub--w{color:var(--text-white-sub)}
+.t-accent{position:relative;display:inline-block}
+.t-accent::before{content:'';position:absolute;top:-5px;left:-12px;width:11px;height:11px;border-top:2px solid var(--accent);border-left:2px solid var(--accent);pointer-events:none}
+
+.corner-fr{position:relative}
+.corner-fr::before,.corner-fr::after{content:'';position:absolute;width:15px;height:15px;pointer-events:none;z-index:2}
+.corner-fr::before{top:0;left:0;border-top:2px solid var(--accent);border-left:2px solid var(--accent)}
+.corner-fr::after{bottom:0;right:0;border-bottom:2px solid var(--accent);border-right:2px solid var(--accent)}
+
+.rv{opacity:0;transform:translateY(20px);transition:opacity .55s cubic-bezier(.22,1,.36,1),transform .55s cubic-bezier(.22,1,.36,1)}
+.rv.visible{opacity:1;transform:translateY(0)}
+.rv-d1{transition-delay:.07s}.rv-d2{transition-delay:.14s}.rv-d3{transition-delay:.21s}
+
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;border-radius:100px;font-size:14.5px;font-weight:600;transition:all .25s ease;text-decoration:none;letter-spacing:-.01em}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent-hover);transform:translateY(-1px)}
+.btn-dark{background:var(--text-dark);color:var(--bg-panel)}
+.btn-dark:hover{background:#2a2d32;transform:translateY(-1px)}
+.btn-outline{border:1.5px solid var(--border-warm);color:var(--text-sub)}
+.btn-outline:hover{border-color:var(--accent);color:var(--accent)}
+.btn-hero-ghost{border:1.5px solid rgba(245,242,236,.18);color:rgba(245,242,236,.55)}
+.btn-hero-ghost:hover{border-color:rgba(245,242,236,.45);color:var(--text-white)}
+.btn-cta-ghost{border:1.5px solid rgba(245,242,236,.12);color:rgba(245,242,236,.4)}
+.btn-cta-ghost:hover{border-color:var(--accent);color:var(--accent)}
+.btn-sm{padding:9px 20px;border-radius:100px;font-size:13px;font-weight:600;border:1.5px solid var(--border-warm);color:var(--text-muted);transition:all .25s ease;text-decoration:none;display:inline-block}
+.btn-sm:hover{border-color:var(--accent);color:var(--accent)}
+
+/* ═══ 1 · HERO ═══ */
+.hero{position:relative;overflow:hidden;min-height:100vh;min-height:100dvh;display:flex;align-items:center;background:var(--bg-hero)}
+.hero-media{position:absolute;inset:0;z-index:0}
+.hero-media img,.hero-media video{width:100%;height:100%;object-fit:cover;object-position:58% 45%;display:block}
+.hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(92deg,rgba(23,25,28,.76) 0%,rgba(23,25,28,.42) 40%,rgba(23,25,28,.1) 75%,rgba(23,25,28,.06) 100%),linear-gradient(180deg,rgba(23,25,28,.12) 0%,rgba(23,25,28,.02) 45%,rgba(23,25,28,.35) 100%);pointer-events:none}
+.hero-content{position:relative;z-index:2;max-width:var(--max-w);margin:0 auto;width:100%;padding:160px 24px 100px}
+.hero-badge{display:inline-flex;align-items:center;gap:7px;background:rgba(245,242,236,.05);border:1px solid rgba(245,242,236,.09);border-radius:100px;padding:6px 16px;font-size:12px;color:rgba(245,242,236,.38);margin-bottom:32px;backdrop-filter:blur(4px)}
+.hero-badge-dot{width:5px;height:5px;border-radius:50%;background:var(--accent);display:block}
+.hero-brand{font-size:clamp(12px,1.4vw,14px);font-weight:600;letter-spacing:.08em;color:var(--accent);margin-bottom:16px;text-transform:uppercase}
+.hero h1{font-size:clamp(30px,5.5vw,54px);font-weight:800;line-height:1.15;letter-spacing:-.03em;margin-bottom:20px;max-width:480px;color:var(--text-white)}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero-desc{font-size:clamp(14px,1.6vw,15.5px);color:rgba(245,242,236,.4);max-width:360px;line-height:1.8;margin-bottom:40px}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
+.hero-scroll{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:6px;color:rgba(245,242,236,.15);font-size:10px;letter-spacing:.12em}
+.hero-scroll-line{width:1px;height:26px;background:linear-gradient(to bottom,var(--accent),transparent);animation:sp 2.5s ease infinite}
+@keyframes sp{0%,100%{opacity:.2}50%{opacity:.6}}
+
+/* ═══ Sections ═══ */
+.sec--base{background:var(--bg-base);padding:clamp(72px,10vw,120px) 0}
+.sec--panel{background:var(--bg-panel);padding:clamp(72px,10vw,120px) 0}
+.sec--soft{background:var(--bg-soft);padding:clamp(72px,10vw,120px) 0}
+.sec--deep{background:var(--bg-deep);padding:0;overflow:hidden}
+
+/* ═══ 2 · CONTEXT ═══ */
+.ctx{background:var(--bg-panel);border-bottom:1px solid var(--border);padding:42px 0}
+.ctx-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:var(--max-w);margin:0 auto;padding:0 24px;text-align:center}
+.ctx-item strong{display:block;font-size:clamp(19px,2.8vw,26px);font-weight:800;color:var(--accent);letter-spacing:-.01em}
+.ctx-item span{font-size:12.5px;color:var(--text-muted);margin-top:3px;display:block}
+
+/* ═══ 3 · ABOUT ═══ */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:40px}
+.about-media{aspect-ratio:4/3;border-radius:var(--r);overflow:hidden;position:relative;background:var(--bg-soft)}
+.about-media img,.about-media video{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.85) brightness(.97)}
+.about-text p{color:var(--text-body);margin-bottom:12px;font-size:15px}
+.about-text p:last-of-type{margin-bottom:0}
+.about-hl{margin-top:24px;padding:18px 22px;background:var(--accent-soft);border-left:3px solid var(--accent);border-radius:0 var(--rs) var(--rs) 0;font-size:14px;color:var(--text-dark);line-height:1.75}
+
+/* ═══ 4 · FOR ═══ */
+.for-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:40px}
+.for-card{background:var(--bg-panel);border:1px solid var(--border);border-radius:var(--r);padding:28px;transition:box-shadow .3s,transform .3s}
+.for-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-2px)}
+.for-ico{width:38px;height:38px;border-radius:var(--rs);background:var(--accent-soft);display:flex;align-items:center;justify-content:center;margin-bottom:14px;font-size:15px;color:var(--accent)}
+.for-card h3{font-size:15.5px;font-weight:700;margin-bottom:5px;color:var(--text-dark)}
+.for-card p{font-size:13.5px;color:var(--text-sub);line-height:1.65}
+
+/* ═══ 5 · SPACE ═══ */
+.sp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:40px}
+.sp-card{background:var(--bg-panel);border:1px solid var(--border);border-radius:var(--r);padding:28px;text-align:center}
+.sp-kw{font-size:22px;font-weight:900;color:var(--accent);margin-bottom:6px}
+.sp-card h3{font-size:14.5px;font-weight:700;margin-bottom:5px;color:var(--text-dark)}
+.sp-card p{font-size:13px;color:var(--text-sub);line-height:1.65}
+.sp-atm{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
+.sp-atm-card{border-radius:var(--r);padding:28px;background:var(--bg-panel);border:1px solid var(--border);position:relative;overflow:hidden}
+.sp-atm-card::before,.sp-atm-card::after{content:'';position:absolute;width:13px;height:13px;pointer-events:none}
+.sp-atm-card::before{top:11px;left:11px;border-top:1.5px solid var(--warm);border-left:1.5px solid var(--warm)}
+.sp-atm-card::after{bottom:11px;right:11px;border-bottom:1.5px solid var(--warm);border-right:1.5px solid var(--warm)}
+.sp-atm-card h3{font-size:15.5px;font-weight:700;margin-bottom:6px;color:var(--accent)}
+.sp-atm-card p{font-size:14px;color:var(--text-sub);line-height:1.7}
+
+/* ═══ 6 · FLOW ═══ */
+.flow-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:40px;position:relative}
+.flow-steps::before{content:'';position:absolute;top:28px;left:12%;right:12%;height:1px;background:linear-gradient(to right,transparent,var(--warm),transparent)}
+.flow-step{text-align:center;position:relative;z-index:1}
+.flow-num{width:46px;height:46px;border-radius:50%;background:var(--bg-panel);border:2px solid var(--accent);display:inline-flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;color:var(--accent);margin-bottom:14px}
+.flow-step h3{font-size:14.5px;font-weight:700;margin-bottom:4px;color:var(--text-dark)}
+.flow-step p{font-size:13px;color:var(--text-sub);line-height:1.6;max-width:170px;margin:0 auto}
+
+/* ═══ 7 · FAQ ═══ */
+.faq-list{margin-top:40px;max-width:720px;display:flex;flex-direction:column;gap:9px}
+.faq-item{background:var(--bg-panel);border:1px solid var(--border);border-radius:18px;overflow:hidden;transition:border-color .3s,background .3s}
+.faq-item.open{border-color:var(--border-warm);background:rgba(139,157,120,.035)}
+.faq-q{width:100%;text-align:left;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:14px;font-size:14.5px;font-weight:600;color:var(--text-dark);cursor:pointer;background:none}
+.faq-tog{width:24px;height:24px;border-radius:50%;flex-shrink:0;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;transition:transform .3s,background .3s}
+.faq-tog svg{width:10px;height:10px;stroke:var(--accent);stroke-width:2;fill:none;transition:transform .3s}
+.faq-item.open .faq-tog{background:var(--accent)}
+.faq-item.open .faq-tog svg{stroke:#fff;transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.22,1,.36,1),padding .3s}
+.faq-item.open .faq-a{max-height:280px;padding:0 22px 18px}
+.faq-a p{font-size:13.5px;color:var(--text-sub);line-height:1.8}
+
+/* ═══ 8 · LOCATION ═══ */
+.loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-top:40px;align-items:start}
+.loc-map{aspect-ratio:4/3;border-radius:var(--r);background:linear-gradient(145deg,var(--bg-soft),#d9d2c8);display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--text-muted);position:relative;overflow:hidden}
+.loc-map::before,.loc-map::after{content:'';position:absolute;width:16px;height:16px;pointer-events:none}
+.loc-map::before{top:14px;left:14px;border-top:2px solid var(--accent);border-left:2px solid var(--accent)}
+.loc-map::after{bottom:14px;right:14px;border-bottom:2px solid var(--accent);border-right:2px solid var(--accent)}
+.loc-info{display:flex;flex-direction:column;gap:18px}
+.loc-row{display:flex;gap:12px;align-items:flex-start}
+.loc-ico{width:34px;height:34px;border-radius:var(--rs);background:var(--accent-soft);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:14px}
+.loc-text strong{display:block;font-size:13.5px;font-weight:600;margin-bottom:1px;color:var(--text-dark)}
+.loc-text span{font-size:13px;color:var(--text-sub)}
+.loc-text a{color:var(--text-sub);text-decoration:none}
+.loc-text a:hover{color:var(--accent)}
+.loc-btns{display:flex;gap:8px;margin-top:6px;flex-wrap:wrap}
+
+/* ═══ 9 · FINAL CTA ═══ */
+.final-cta-inner{display:grid;grid-template-columns:1fr 1fr;max-width:none;min-height:520px}
+.final-cta-text{display:flex;flex-direction:column;justify-content:center;padding:clamp(60px,8vw,100px) clamp(24px,5vw,80px)}
+.final-cta-text .sec-sub--w{margin-bottom:32px}
+.final-cta-btns{display:flex;gap:12px;flex-wrap:wrap}
+.final-cta-media{position:relative;overflow:hidden}
+.final-cta-media img{width:100%;height:100%;object-fit:cover;object-position:center 15%;display:block;filter:saturate(.8) brightness(.92)}
+.final-cta-media-overlay{position:absolute;inset:0;background:linear-gradient(90deg,var(--bg-deep) 0%,rgba(26,28,31,.4) 30%,rgba(26,28,31,.05) 100%),linear-gradient(0deg,rgba(26,28,31,.3) 0%,transparent 40%);pointer-events:none}
+
+/* ═══ Footer ═══ */
+footer{background:var(--bg-deep);border-top:1px solid rgba(245,242,236,.03);padding:28px 24px;text-align:center;font-size:11.5px;color:rgba(245,242,236,.18)}
+
+/* ═══ Mobile CTA ═══ */
+.m-cta{display:none;position:fixed;bottom:0;left:0;right:0;z-index:100;padding:12px 16px;padding-bottom:calc(12px + env(safe-area-inset-bottom));background:rgba(252,250,246,.94);backdrop-filter:blur(14px);border-top:1px solid var(--border)}
+.m-cta .btn{width:100%;justify-content:center;padding:15px;font-size:14.5px}
+
+/* ═══ Responsive ═══ */
+@media(max-width:900px){
+  .about-grid,.loc-grid{grid-template-columns:1fr;gap:24px}
+  .sp-grid{grid-template-columns:1fr}
+  .flow-steps{grid-template-columns:repeat(2,1fr);gap:18px}
+  .flow-steps::before{display:none}
+  .sp-atm{grid-template-columns:1fr}
+  .final-cta-inner{grid-template-columns:1fr}
+  .final-cta-media{min-height:320px;order:-1}
+  .final-cta-media img{object-position:center 20%}
+  .final-cta-media-overlay{background:linear-gradient(180deg,rgba(26,28,31,.05) 0%,rgba(26,28,31,.05) 60%,rgba(26,28,31,.6) 100%),linear-gradient(0deg,var(--bg-deep) 0%,transparent 15%)}
+  .final-cta-text{padding:48px 24px 64px}
+}
+@media(max-width:640px){
+  .ctx-grid{grid-template-columns:1fr;gap:10px}
+  .for-grid{grid-template-columns:1fr}
+  .flow-steps{grid-template-columns:1fr;gap:14px}
+  .hero-scroll{display:none}
+  .m-cta{display:block}
+  .wrap{padding:0 20px}
+  body{padding-bottom:76px}
+  .hero-content{padding:130px 20px 80px}
+  .hero-media img,.hero-media video{object-position:55% 48%}
+  .final-cta-media{min-height:280px}
+  .final-cta-text{padding:40px 20px 56px}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"SportsActivityLocation",
+  "name":"레인지엑스 대치점",
+  "description":"대치동·강남·한티 생활권의 프리미엄 실내 골프 연습장. 연습부터 상담까지 정돈된 흐름을 제공합니다.",
+  "url":"https://rangex-daechi.com",
+  "telephone":"+82-02-0000-0000",
+  "address":{"@type":"PostalAddress","streetAddress":"서울특별시 강남구 대치동 000-0","addressLocality":"서울","addressRegion":"강남구","postalCode":"06000","addressCountry":"KR"},
+  "geo":{"@type":"GeoCoordinates","latitude":37.4945,"longitude":127.0559},
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"06:00","closes":"23:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"07:00","closes":"22:00"}
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- ═══ 1 · HERO ═══ -->
+<section class="hero snap" id="top">
+  <div class="hero-media">
+    <img src="herogif.gif" alt="레인지엑스 대치점 실내 골프 공간" decoding="async">
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge rv"><span class="hero-badge-dot"></span> 대치동 · 강남 · 한티역</div>
+    <div class="hero-brand rv">Range X Daechi</div>
+    <h1 class="rv">연습이 <em>정돈</em>되는<br>공간</h1>
+    <p class="hero-desc rv">레인지엑스 대치점.<br>방문부터 연습, 상담까지 흐름이 갖춰진 프리미엄 실내 골프 공간.</p>
+    <div class="hero-ctas rv">
+      <a href="#contact" class="btn btn-primary">방문 문의</a>
+      <a href="#about" class="btn btn-hero-ghost">공간 살펴보기</a>
+    </div>
+  </div>
+  <div class="hero-scroll"><div class="hero-scroll-line"></div>SCROLL</div>
+</section>
+
+<!-- ═══ 2 · CONTEXT ═══ -->
+<div class="ctx snap rv">
+  <div class="ctx-grid">
+    <div class="ctx-item"><strong>프리미엄</strong><span>시설 · 장비 · 관리</span></div>
+    <div class="ctx-item"><strong>대치동</strong><span>강남 · 한티역 생활권</span></div>
+    <div class="ctx-item"><strong>1:1</strong><span>맞춤 연습 · 상담</span></div>
+  </div>
+</div>
+
+<!-- ═══ 3 · ABOUT ═══ -->
+<section class="sec--base snap" id="about">
+  <div class="wrap">
+    <div class="label rv">About</div>
+    <h2 class="sec-title rv"><span class="t-accent">스크린골프장이 아닙니다</span></h2>
+    <p class="sec-sub rv">연습의 흐름이 정돈된 공간, 레인지엑스 대치점.</p>
+    <div class="about-grid">
+      <div class="about-media corner-fr rv">
+        <video autoplay muted loop playsinline poster="poster-about.jpg" loading="lazy">
+          <source src="referenceRangeX.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="about-text rv">
+        <p>타석에 서는 순간부터 연습을 마치는 순간까지, 집중을 방해하는 요소 없이 온전히 연습에 몰입할 수 있도록 공간 전체가 정돈되어 있습니다.</p>
+        <p>장비 상태, 공간 청결, 이용 흐름, 상담 연결까지. 눈에 보이지 않는 부분까지 관리되는 공간입니다.</p>
+        <p>대치동·강남 생활권에서 시간을 내어 방문하시는 분들의 기준에 맞추고 있습니다.</p>
+        <div class="about-hl">연습만 하러 오셔도 좋고, 방향이 필요하시면 상담도 가능합니다.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 4 · FOR ═══ -->
+<section class="sec--panel snap" id="for">
+  <div class="wrap">
+    <div class="label rv">Who It's For</div>
+    <h2 class="sec-title rv"><span class="t-accent">이런 분들이 찾습니다</span></h2>
+    <p class="sec-sub rv">레인지엑스 대치점에 잘 맞는 분들.</p>
+    <div class="for-grid">
+      <div class="for-card rv">
+        <div class="for-ico">⏱</div>
+        <h3>퇴근 후 가볍게 연습하고 싶은 분</h3>
+        <p>한티역·대치동 인근, 퇴근 동선에서 자연스럽게 들를 수 있는 공간.</p>
+      </div>
+      <div class="for-card rv rv-d1">
+        <div class="for-ico">✦</div>
+        <h3>시설과 청결이 중요한 분</h3>
+        <p>장비 상태, 공간 관리, 이용 환경까지 꼼꼼하게 보시는 분.</p>
+      </div>
+      <div class="for-card rv rv-d2">
+        <div class="for-ico">○</div>
+        <h3>골프를 처음 시작하려는 분</h3>
+        <p>부담 없이, 정돈된 환경에서 편하게 시작하고 싶은 분.</p>
+      </div>
+      <div class="for-card rv rv-d3">
+        <div class="for-ico">↗</div>
+        <h3>연습과 상담을 함께 고려하는 분</h3>
+        <p>필요할 때 전문 상담이 자연스럽게 연결되는 구조를 원하는 분.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 5 · SPACE ═══ -->
+<section class="sec--base snap" id="space">
+  <div class="wrap">
+    <div class="label rv">Space</div>
+    <h2 class="sec-title rv"><span class="t-accent">공간이 연습의 질을 바꿉니다</span></h2>
+    <p class="sec-sub rv">집중이 흐트러지지 않는 환경, 깔끔하게 관리되는 동선.</p>
+    <div class="sp-grid">
+      <div class="sp-card rv">
+        <div class="sp-kw">독립</div>
+        <h3>프라이빗 타석</h3>
+        <p>옆 시선이 신경 쓰이지 않는 독립형 타석 배치.</p>
+      </div>
+      <div class="sp-card rv rv-d1">
+        <div class="sp-kw">최신</div>
+        <h3>장비 · 시뮬레이터</h3>
+        <p>정기 점검·관리되는 최신 장비.</p>
+      </div>
+      <div class="sp-card rv rv-d2">
+        <div class="sp-kw">관리</div>
+        <h3>일일 청결 유지</h3>
+        <p>매일 점검되는 시설, 쾌적한 환경.</p>
+      </div>
+    </div>
+    <div class="sp-atm">
+      <div class="sp-atm-card rv">
+        <h3>차분한 분위기, 이어지는 연습</h3>
+        <p>조명, 동선, 소리까지 고려한 설계. 내 스윙에만 집중하는 시간.</p>
+      </div>
+      <div class="sp-atm-card rv rv-d1">
+        <h3>강남·대치 생활권 접근성</h3>
+        <p>한티역 도보 거리. 대치동·역삼·도곡에서 부담 없이.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 6 · FLOW ═══ -->
+<section class="sec--panel snap" id="flow">
+  <div class="wrap">
+    <div class="label rv">How to Visit</div>
+    <h2 class="sec-title rv"><span class="t-accent">방문까지의 흐름</span></h2>
+    <p class="sec-sub rv">처음이어도 어렵지 않습니다.</p>
+    <div class="flow-steps">
+      <div class="flow-step rv"><div class="flow-num">1</div><h3>문의 · 예약</h3><p>전화 또는 온라인으로 편하게.</p></div>
+      <div class="flow-step rv rv-d1"><div class="flow-num">2</div><h3>방문 · 안내</h3><p>공간과 이용 방식을 직접 안내.</p></div>
+      <div class="flow-step rv rv-d2"><div class="flow-num">3</div><h3>연습 시작</h3><p>독립 타석에서 자유롭게.</p></div>
+      <div class="flow-step rv rv-d3"><div class="flow-num">4</div><h3>상담 연결</h3><p>필요하시면 맞춤 상담까지.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 7 · FAQ ═══ -->
+<section class="sec--base snap" id="faq">
+  <div class="wrap">
+    <div class="label rv">FAQ</div>
+    <h2 class="sec-title rv"><span class="t-accent">자주 묻는 질문</span></h2>
+    <p class="sec-sub rv">방문 전 궁금한 점을 확인하세요.</p>
+    <div class="faq-list">
+      <div class="faq-item rv"><button class="faq-q">어떤 분들에게 잘 맞는 공간인가요?<span class="faq-tog"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></span></button><div class="faq-a"><p>대치동·강남·한티 생활권에서 퇴근 후나 주말에 실내 골프를 연습하시는 분, 시설 관리와 청결을 중시하시는 분, 연습과 상담을 함께 고려하시는 분께 잘 맞습니다.</p></div></div>
+      <div class="faq-item rv"><button class="faq-q">초보도 부담 없이 이용할 수 있나요?<span class="faq-tog"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></span></button><div class="faq-a"><p>네. 처음 시작하시는 분도 편하게 이용하실 수 있도록 공간과 흐름이 설계되어 있습니다. 입문 상담도 가능합니다.</p></div></div>
+      <div class="faq-item rv"><button class="faq-q">개인 연습만 해도 되나요?<span class="faq-tog"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></span></button><div class="faq-a"><p>물론입니다. 상담 없이 개인 연습만 하시는 분도 많습니다. 독립 타석에서 본인 페이스에 맞춰 자유롭게 이용하시면 됩니다.</p></div></div>
+      <div class="faq-item rv"><button class="faq-q">문의 후 방문하는 방식인가요?<span class="faq-tog"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></span></button><div class="faq-a"><p>사전 문의 후 방문하시면 원활하게 안내받으실 수 있습니다. 전화 또는 온라인으로 간단히 문의해 주세요.</p></div></div>
+      <div class="faq-item rv"><button class="faq-q">강남·대치 인근에서 어떤 점이 좋은가요?<span class="faq-tog"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></span></button><div class="faq-a"><p>한티역 도보 거리에 위치해 접근이 편합니다. 대치동·역삼·도곡 일대에서 퇴근 후에도 부담 없이 방문하실 수 있습니다.</p></div></div>
+      <div class="faq-item rv"><button class="faq-q">장비와 시설 상태는 어떤가요?<span class="faq-tog"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></span></button><div class="faq-a"><p>최신 시뮬레이터와 장비를 사용하며 정기적으로 점검합니다. 시설 청결은 매일 유지됩니다.</p></div></div>
+      <div class="faq-item rv"><button class="faq-q">운영 시간은 어떻게 되나요?<span class="faq-tog"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></span></button><div class="faq-a"><p>평일 06:00–23:00, 주말 07:00–22:00. 방문 전 전화 또는 온라인으로 확인해 주세요.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 8 · LOCATION ═══ -->
+<section class="sec--panel snap" id="contact">
+  <div class="wrap">
+    <div class="label rv">Location · Contact</div>
+    <h2 class="sec-title rv"><span class="t-accent">찾아오시는 길</span></h2>
+    <div class="loc-grid">
+      <div class="loc-map rv">지도 영역</div>
+      <div class="loc-info rv">
+        <div class="loc-row"><div class="loc-ico">◎</div><div class="loc-text"><strong>주소</strong><span>서울특별시 강남구 대치동 000-0 (한티역 도보 0분)</span></div></div>
+        <div class="loc-row"><div class="loc-ico">✆</div><div class="loc-text"><strong>전화</strong><span><a href="tel:0200000000">02-0000-0000</a></span></div></div>
+        <div class="loc-row"><div class="loc-ico">◷</div><div class="loc-text"><strong>운영시간</strong><span>평일 06:00 – 23:00 · 주말 07:00 – 22:00</span></div></div>
+        <div class="loc-btns"><a href="#" class="btn-sm" target="_blank" rel="noopener">네이버 플레이스</a><a href="#" class="btn-sm" target="_blank" rel="noopener">구글맵</a><a href="#" class="btn-sm" target="_blank" rel="noopener">카카오맵</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 9 · FINAL CTA ═══ -->
+<section class="sec--deep snap" id="cta">
+  <div class="final-cta-inner">
+    <div class="final-cta-text rv">
+      <div class="label label--light">Welcome</div>
+      <h2 class="sec-title sec-title--w" style="max-width:380px">편하게<br>방문해 주세요</h2>
+      <p class="sec-sub sec-sub--w">대치동에서 정돈된 연습 공간을 찾고 계시다면.<br>부담 없이 문의하시고, 직접 보시고 판단하셔도 좋습니다.</p>
+      <div class="final-cta-btns">
+        <a href="tel:0200000000" class="btn btn-primary">전화 문의</a>
+        <a href="#" class="btn btn-cta-ghost">온라인 문의</a>
+      </div>
+    </div>
+    <div class="final-cta-media">
+      <img src="closing-smile.png" alt="레인지엑스 대치점" loading="lazy" decoding="async">
+      <div class="final-cta-media-overlay"></div>
+    </div>
+  </div>
+</section>
+
+<footer><p>&copy; 2025 레인지엑스 대치점 · Range X Daechi</p></footer>
+
+<div class="m-cta">
+  <a href="tel:0200000000" class="btn btn-dark">문의하기</a>
+</div>
+
+<noscript><style>.rv{opacity:1;transform:none}</style></noscript>
+<script>
+(function(){
+  var e=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){var o=new IntersectionObserver(function(n){n.forEach(function(i){if(i.isIntersecting){i.target.classList.add('visible');o.unobserve(i.target)}})},{threshold:.08,rootMargin:'0px 0px -24px 0px'});e.forEach(function(i){o.observe(i)})}
+  setTimeout(function(){e.forEach(function(i){i.classList.add('visible')})},5000);
+  document.querySelectorAll('.faq-q').forEach(function(b){b.addEventListener('click',function(){var i=b.closest('.faq-item'),p=i.classList.contains('open');document.querySelectorAll('.faq-item.open').forEach(function(x){x.classList.remove('open')});if(!p)i.classList.add('open')})});
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(ev){var t=document.querySelector(a.getAttribute('href'));if(t){ev.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'})}})});
+})();
+</script>
+</body>
+</html>
