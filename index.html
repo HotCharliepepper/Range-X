@@ -232,13 +232,14 @@ footer{background:var(--bg-deep);border-top:1px solid rgba(245,242,236,.03);padd
 .channel-bridge{margin-top:42px;display:grid;grid-template-columns:1.15fr .85fr;gap:18px;align-items:stretch}
 .channel-copy{background:var(--bg-panel);border:1px solid var(--border);border-radius:var(--r);padding:26px;box-shadow:var(--shadow-card)}
 .channel-copy h3{font-size:17px;font-weight:800;color:var(--text-dark);margin-bottom:8px}
-.channel-copy p{font-size:13.5px;color:var(--text-sub);line-height:1.75}
+.channel-copy p{font-size:13.5px;color:var(--text-sub);line-height:1.78}
 .channel-links{display:grid;grid-template-columns:1fr;gap:10px}
-.channel-link{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 18px;border-radius:var(--r);background:var(--bg-panel);border:1px solid var(--border);text-decoration:none;color:var(--text-dark);transition:all .25s ease;box-shadow:var(--shadow-card)}
-.channel-link:hover{transform:translateY(-1px);border-color:var(--accent);box-shadow:var(--shadow-hover)}
-.channel-link strong{display:block;font-size:14px;font-weight:800;line-height:1.35}
-.channel-link span{display:block;font-size:12px;color:var(--text-muted);margin-top:2px;line-height:1.45}
-.channel-link em{font-style:normal;color:var(--accent);font-weight:800;flex-shrink:0}
+.channel-link{position:relative;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:18px 20px 18px 22px;border-radius:var(--r);background:#fff;border:1px solid var(--border);border-left:3px solid var(--accent);text-decoration:none;color:var(--text-dark);transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;box-shadow:var(--shadow-card)}
+.channel-link:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:var(--shadow-hover)}
+.channel-link strong{display:block;font-size:15px;font-weight:800;line-height:1.35;color:var(--text-dark);letter-spacing:-.01em}
+.channel-link span{display:block;font-size:12.5px;color:var(--text-sub);margin-top:3px;line-height:1.5}
+.channel-link em{font-style:normal;color:var(--accent);font-weight:800;flex-shrink:0;width:30px;height:30px;border-radius:50%;background:var(--accent-soft);display:inline-flex;align-items:center;justify-content:center;font-size:15px;transition:background .25s ease,color .25s ease,transform .25s ease}
+.channel-link:hover em{background:var(--accent);color:#fff;transform:translateX(3px)}
 
 /* ═══ Responsive ═══ */
 @media(max-width:900px){
@@ -646,13 +647,13 @@ footer{background:var(--bg-deep);border-top:1px solid rgba(245,242,236,.03);padd
     </div>
     <div class="channel-bridge rv">
       <div class="channel-copy">
-        <h3>검색부터 예약까지 한 흐름으로 연결했습니다.</h3>
-        <p>홈페이지는 설명과 신뢰를 맡고, 네이버 예약은 상담·방문 연결을 맡습니다. 인스타그램은 실제 분위기와 프로 콘텐츠를, 쓰레드는 짧은 인사이트와 레슨 단상을 함께 전달합니다.</p>
+        <h3>편한 채널에서 먼저 만나보세요.</h3>
+        <p>예약과 상담은 네이버에서, 실제 레슨 현장과 매장 분위기는 인스타그램에서, 프로의 골프 단상은 쓰레드에서 만나뵐 수 있습니다.</p>
       </div>
       <div class="channel-links">
-        <a class="channel-link" href="https://booking.naver.com/booking/6/bizes/1618887" target="_blank" rel="noopener"><span><strong>네이버 예약·온라인 문의</strong><span>상담과 방문 예약으로 바로 이동</span></span><em>→</em></a>
-        <a class="channel-link" href="https://www.instagram.com/rangex_daechi/" target="_blank" rel="noopener"><span><strong>인스타그램 @rangex_daechi</strong><span>프로필·레슨 분위기·실제 콘텐츠 확인</span></span><em>→</em></a>
-        <a class="channel-link" href="https://www.threads.com/@rangex_daechi" target="_blank" rel="noopener"><span><strong>쓰레드 @rangex_daechi</strong><span>레슨 단상·일상 톤 인사이트</span></span><em>→</em></a>
+        <a class="channel-link" href="https://booking.naver.com/booking/6/bizes/1618887" target="_blank" rel="noopener"><span><strong>네이버 예약·온라인 문의</strong><span>원하는 시간으로 바로 예약하기</span></span><em>→</em></a>
+        <a class="channel-link" href="https://www.instagram.com/rangex_daechi/" target="_blank" rel="noopener"><span><strong>인스타그램 @rangex_daechi</strong><span>레슨 현장과 매장 분위기 보기</span></span><em>→</em></a>
+        <a class="channel-link" href="https://www.threads.com/@rangex_daechi" target="_blank" rel="noopener"><span><strong>쓰레드 @rangex_daechi</strong><span>프로의 골프 단상과 코칭 노트</span></span><em>→</em></a>
       </div>
     </div>
   </div>
@@ -663,7 +664,7 @@ footer{background:var(--bg-deep);border-top:1px solid rgba(245,242,236,.03);padd
   <div class="final-cta-inner">
     <div class="final-cta-text rv">
       <div class="label label--light">Start</div>
-      <h2 class="sec-title sec-title--w" style="max-width:420px">혼자 고민하지 마세요.<br>데이터와 코칭으로 방향을 잡으세요.</h2>
+      <h2 class="sec-title sec-title--w" style="max-width:460px">혼자 고민하기보다,<br>데이터와 코칭으로 방향을 잡아보세요.</h2>
       <p class="sec-sub sec-sub--w">전화가 편하시면 바로 연결하고,<br>예약·온라인 문의는 네이버에서 편하게 남기실 수 있습니다.</p>
       <div class="final-cta-btns">
         <a href="tel:0220527100" class="btn btn-primary">레슨 상담 전화</a>
